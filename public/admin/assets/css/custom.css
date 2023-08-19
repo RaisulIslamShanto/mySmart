@@ -1,0 +1,323 @@
+.fixed_background{
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+}
+.package_price_item{
+  position: relative;
+  margin-left: 40px;
+    display: flex; 
+    justify-content: center;
+  min-height: 220px;
+}
+.package_price_item .title{
+   color: #0bb197;
+   text-align: center;
+  text-transform: capitalize;
+}
+.package_price_item form{ 
+   text-align: center;
+}
+.package_price_item ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+.package_price_item ul li{ 
+  overflow: hidden;
+}
+.package_price_item ul li i{
+  float: left;
+  font-size: 18px;
+   color: #0bb197;
+   line-height: 22px;
+  margin-right: 5px;
+}
+ 
+.package_price_item .card-body{
+  flex: 0;
+  padding: 10px;
+}
+.package_price_item .price-value{
+  border-radius: 0px 10px 10px 0px;
+   position: absolute;
+   color: #fff;
+   background: #0bb197;
+   padding: 10px 6px;
+   top: 14%;
+    left: -37px;
+     writing-mode: vertical-lr;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    font-size: 16px;
+}
+body[data-topbar=dark] .package_price_item .price-value{
+  background: #252b3b;
+}
+body[data-topbar=dark] .package_price_item .title{
+  color: #ffffff;
+}
+body[data-topbar=dark] .package_price_item ul li i{
+  color: #252b3b;
+}
+body[data-topbar=dark] .property_heading h3 {
+    background: rgba(80, 93, 105, 0.8); 
+}
+body[data-topbar=dark] .property_heading p {
+     
+    color: #252b3b; 
+}
+body .ri-sun-line{
+  display: none;
+}
+body[data-topbar=dark] .ri-sun-line{
+  display: block;
+}
+body .ri-moon-fill{
+  display: block;
+}
+body[data-topbar=dark] .ri-moon-fill{
+  display: none;
+}
+.package_price_item .price-value .amount{
+  font-weight: bold;
+}
+
+.payment_item{
+  padding: 0px 30px;
+}
+.payment_item .card-body{
+   padding: 0;
+   position: relative;
+}
+.payment_item .card-body label{
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.payment_item .card-body input{
+   position: absolute;
+   right: 20px;
+   top:30px;
+}
+.payment_item .card-body img{
+  max-height: 30px;
+}
+
+.bg-new{
+  background-color: #f7fbfe !important;
+}
+.header_poperty { padding-top: 44px;}
+
+.header_poperty #page-topbar .app-search, .header_poperty #vertical-menu-btn{ display: none !important;}
+ .add_new_poperty {
+    position: fixed;
+    right: 0;
+    background: #0bb197;
+    top: 40%;
+    color: #fff;
+     writing-mode: vertical-lr;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    padding: 15px 6px;
+    font-size: 16px;
+    border-radius: 0px 10px 10px 0px;
+}
+.add_new_poperty{
+  background:#252b3b;
+}
+.property_content{ 
+  position: relative;
+    height: 300px;
+    background-size: cover !important;
+    border-radius: 20px;
+}
+.border-radius-20{
+  border-radius: 20px;
+}
+.property_heading{
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+.property_heading h3{
+   background: rgba(11, 177, 151, 0.8);
+   color: #fff;
+   padding: 6px 10px;
+   margin: 0;
+}
+.property_heading p{
+   background: rgba(255, 255, 255, 0.8);
+   color: #0bb197;
+   padding: 6px 10px;
+   margin: 0;
+}
+
+ .btn-large-rounded{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+ }
+
+.opacity-0{
+  opacity: 0;
+}
+.account_mode input[type="radio"]{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+   cursor: pointer;
+}
+
+.account_mode .card{
+  text-align: center;
+  overflow: hidden;
+  color: #0bb197;
+ 
+}
+.account_mode .card i{
+  font-size: 250px;
+}
+.account_mode  input:checked ~ .card-body{ 
+      background: #0bb197;
+     color: #fff;
+}
+.card{
+  box-shadow: 0 0 15px 10px #f7f7f7;
+}
+.account_mode  input:checked ~ .card-body h3{
+  color: #fff;
+}
+.poperty_image_upload{
+  position: relative;
+}
+.form-control--uploader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.remix-icon{
+  background: transparent linear-gradient(180deg,transparent,rgba(0,0,0,.8) 95%) repeat scroll 0 0;
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    padding: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.remix-icon span{
+  margin-left: 10px;
+  font-family: "Work Sans",sans-serif !important;
+}
+.poperty_galleryimage_upload .gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.poperty_galleryimage_upload .gallery img {
+    width: 100px;
+    border: 2px solid #4a4a4a;
+    padding: 5px;
+    margin: 3px;
+}
+.poperty_galleryimage_upload #gallery-photo-add{
+  opacity: 0;
+  position: absolute;
+}
+.poperty_feature_list{
+ padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.poperty_feature_list li{
+  list-style: none;
+  margin: 2px;
+}
+.poperty_feature_list li input[type="checkbox"]{
+  display: none;
+}
+.poperty_feature_list li input:checked ~ label{ 
+    border-color: #0bb197;
+    background: #0bb197;
+    color: #fff;
+}
+.quick_card{
+   background: #0bb197;
+    color: #fff;
+}
+
+.quick_link_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.quick_link_list > a{
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  color: #fff!important;
+  flex-basis: 0; 
+  flex-grow: 1;
+  max-width: 100%;
+  border-right: 1px solid #17a08b; 
+
+}
+.quick_link_list > a:hover{
+  background: #f0f4f8;
+  color: #0bb197 !important;
+  border-radius: 10px;
+}
+.quick_link_list > a:last-child{
+  border-right: none;
+}
+.quick_link_list > a i{
+  display: block;
+  color: #0bb197!important;
+}
+.curcle_image{
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  background: #0e9f88;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+table .heading{
+  font-size: 14px;
+    font-weight: bold;
+    background: #f1f1f1;
+}
+ 
+.select_theme .form-check{
+  position: relative;
+  padding-left: 0;
+}
+.select_theme .form-check-input{
+  position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    border-radius: 0;
+}
+.select_theme .form-check:hover{
+opacity: .8;
+}
+.height100vh{
+  height: 100%;
+  min-height: 100vh;
+}
